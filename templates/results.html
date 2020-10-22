@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- https://he.wikipedia.org/wiki/%D7%9C%D7%95%D7%97_%D7%90%D7%99%D7%A8%D7%95%D7%A2%D7%99%D7%9D_%D7%A9%D7%A0%D7%AA%D7%99 -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>תאריך את זה</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:Semi-bold+600,Black+900">
+	<link rel="stylesheet" type=text/css href="{{url_for('static', filename='my.css')}}">
+</head>
+<body>
+
+
+
+<div class="grid-container">
+  <div class="header">
+    <h1>זאת עובדה!<br>תאריך את זה</h1>
+  </div>
+  <div class="button" id="ancor_location">
+	<h2><strong>תוצאות החיפוש לתאריך {{day}} {{month}}</strong></h2>
+	<p> <strong>לחיפוש תאריך נוסף <a href={{ url_for('.index_page', _anchor='ancor_location') }}>לחצו כאן </a></strong> </p>
+	</div>
+
+	<div class="results left" id="Events"><h4><u>אירועים היסטוריים ביום זה</u></h4>{{ events_by_date | safe}}</div>
+	<div class="results middle" id="Births"><h4><u>אישים מפורסמים שנולדו ביום זה </u></h4>{{ births_by_date | safe}}</div>  
+	<div class="results right" id="Holidays"><h4><u>חגים ואירועים שחלים ביום זה</u></h4>{{ holidays_by_date | safe}}</div>
+  
+  <div class="footer">
+  <p>אהבתם את האתר? גיליתם עובדה מעניינת שתרצו לשתף אותנו? צרו קשר <a href="mailto:hadasit@gmail.com"> במייל</a></p>
+  
+  </div>
+</div>
+
+</body>
+</html>
