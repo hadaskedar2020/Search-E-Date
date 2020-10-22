@@ -133,5 +133,8 @@ form {
       'right right right right right right' 
       'footer footer footer footer footer footer';
   }
+  .header h1 {
+	  font-size: 70px;
+	}
 }
 
