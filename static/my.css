@@ -42,6 +42,14 @@ body {
   color: #B8860B;
 }
 
+.button h2, h3, h5 {
+	font-weight: bold;
+}
+
+#info {
+	font-weight: bold;
+}
+
 .button a {
   color: deepskyblue;	
 }
@@ -59,7 +67,6 @@ form {
 	'button button button button button button'	
     'left left middle middle right right' 
     'footer footer footer footer footer footer';
-  /* grid-column-gap: 10px; */
 } 
 
 .left,
@@ -105,6 +112,21 @@ form {
   font-weight: bold;
 }
 
+#daylable {
+	font-weight: bold;
+}
+
+#day {
+	font-weight: bold;
+}
+
+#month {
+	font-weight: bold;
+}
+
+#dropdown {
+	font-weight: bold;
+}
 
 @keyframes fadeInFromNone {
     0% {
