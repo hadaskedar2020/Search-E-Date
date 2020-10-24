@@ -19,15 +19,15 @@
     <h1 id="ancor_location">זאת עובדה!<br>תאריך את זה</h1>
   </div>
   <div class="button">
-	<h2><strong>האם אי פעם תהית מה קרה בדיוק ביום שבו נולדת?</strong></h2>
-	<p>זו ההזדמנות לבדוק איזה מאורע הסטורי התרחש בתאריך הולדתך, איזו אישיות מפורסמת נולדה באותו היום ממש ואפילו איזה חג נחגג במקומות שונים בעולם ביחד עם יום הולדתך. <strong>מוכנים לגלות?  </strong> בחרי/י את החודש הלועזי והיום בחודש שבו נולדת:</p>
+	<h2>האם אי פעם תהית מה קרה בדיוק ביום שבו נולדת?</h2>
+	<p>זו ההזדמנות לבדוק איזה מאורע הסטורי התרחש בתאריך הולדתך, איזו אישיות מפורסמת נולדה באותו היום ממש ואפילו איזה חג נחגג במקומות שונים בעולם ביחד עם יום הולדתך. </p><h3>מוכנים לגלות?  </h3><p> בחרי/י את החודש הלועזי והיום בחודש שבו נולדת:</p>
 	<form id="search-form" class="row" action="{{ url_for('.search_date', _anchor='ancor_location') }}" method = "get">
 		<div class="col-auto">
-          <label for="day"><strong>יום בחודש: </strong></label>
+          <label for="day" id="daylable">יום בחודש: </label>
           <input class="btn btn-info" id="day" name="day" type="number" placeholder="1-31" tabindex=0 autofocus min="1" max="31" required>
         </div>
         <div class="col-auto">
-          <label id="month"><strong>חודש לועזי: </strong></label>
+          <label id="month">חודש לועזי: </label>
 			<select class="btn btn-info dropdown-toggle" name="month" id="dropdown" placeholder="חודש" required>
 				<option value=""></option>
 				<option value="בינואר">ינואר</option>
@@ -45,7 +45,7 @@
 				</select><br>
         </div>
         <div class="col-auto">
-          <button type="submit" class="btn btn-info"><strong>חיפוש</strong></button>
+          <button id="info" type="submit" class="btn btn-info">חיפוש</button>
         </div>
       </form>
 	
