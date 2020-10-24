@@ -19,8 +19,8 @@
     <h1>זאת עובדה!<br>תאריך את זה</h1>
   </div>
   <div class="button" id="ancor_location">
-	<h2><strong>תוצאות החיפוש לתאריך {{day}} {{month}}</strong></h2>
-	<p> <strong>לחיפוש תאריך נוסף <a href={{ url_for('.index_page', _anchor='ancor_location') }}>לחצו כאן </a></strong> </p>
+	<h2>תוצאות החיפוש לתאריך {{day}} {{month}}</h2>
+	<h5> לחיפוש תאריך נוסף <a href={{ url_for('.index_page', _anchor='ancor_location') }}>לחצו כאן </a> </h5>
 	</div>
 
 	<div class="results left" id="Events"><h4><u>אירועים היסטוריים ביום זה</u></h4>{{ events_by_date | safe}}</div>
